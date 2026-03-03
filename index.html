@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Mukendi · Health & Computational Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">I. MUKENDI</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about"      data-i18n="nav.about">About</a>
+        <a href="#skills"     data-i18n="nav.skills">Skills</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects"   data-i18n="nav.projects">Projects</a>
+        <a href="#contact"    data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="switch language">EN</button>
+        <button class="mobile-menu-btn" id="menuBtn" aria-label="menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shape"></div>
+    <div class="container hero-grid">
+
+      <!-- LEFT: text content -->
+      <div class="hero-content">
+        <div class="hero-tag"><i class="fas fa-graduation-cap"></i> <span data-i18n="hero.tag">Open to opportunities</span></div>
+        <h1 class="hero-title">Isaac<br>Mukendi</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">L3 Health Sciences · UPJV</p>
+        <p class="hero-description" data-i18n="hero.description">
+          Biomedical technologies &amp; computational techniques student. Passionate about data analysis, medical devices and physiological signal processing.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.contactBtn"><i class="fas fa-paper-plane"></i> Contact me</a>
+          <div class="download-group">
+            <a href="IsaacMukendiCV_english.pdf" download class="btn btn-outline" id="downloadEN"><i class="fas fa-file-pdf"></i> CV EN</a>
+            <a href="IsaacMukendiCV_french.pdf"  download class="btn btn-outline" id="downloadFR"><i class="fas fa-file-pdf"></i> CV FR</a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <span><i class="fas fa-map-pin"></i> Amiens, France</span>
+          <span><i class="fas fa-envelope"></i> isaacmukendi01@gmail.com</span>
+          <span><i class="fas fa-phone"></i> +33 744 818 877</span>
+        </div>
+      </div>
+
+      <!-- CENTER: profile picture -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <div class="hero-photo-inner">
+            <img
+              src="./profile.png"
+              alt="Isaac Mukendi"
+              class="hero-photo"
+              id="profileImg"
+            />
+          </div>
+        </div>
+        <!-- floating badges -->
+        <div class="float-badge float-badge--top">
+          <i class="fas fa-dna"></i>
+          <span data-i18n="hero.badge1">Computational Biology</span>
+        </div>
+        <div class="float-badge float-badge--mid">
+          <i class="fas fa-heart-pulse"></i>
+          <span data-i18n="hero.badge2">Medical Devices</span>
+        </div>
+        <div class="float-badge float-badge--bot">
+          <i class="fas fa-chart-line"></i>
+          <span data-i18n="hero.badge3">Health Data</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="about.label">Background</span>
+        <h2 data-i18n="about.title">Academic Background</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about.intro">
+            Bachelor Health Sciences (2023–2026) — Biomedical Technologies &amp; Computational Techniques track. Strong background in physiology, pharmacology, biostatistics and modelling.
+          </p>
+          <div class="edu-timeline">
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <span class="year">2025–2026</span>
+              <span class="desc" data-i18n="about.L3">L3 Health Sciences (TBTC) · GPA 13.9/20</span>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <span class="year">2024–2025</span>
+              <span class="desc" data-i18n="about.L2">L2 Health Sciences · 11.78/20</span>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <span class="year">2023–2024</span>
+              <span class="desc" data-i18n="about.L1">L1 Life &amp; Earth Sciences · 12.9/20</span>
+            </div>
+          </div>
+          <p class="key-courses" data-i18n="about.courses">
+            <strong>Key courses:</strong> Cellular &amp; molecular physiology, algorithms, digital health, medical devices, biostatistics, immunology, modelling.
+          </p>
+        </div>
+        <div class="about-highlight">
+          <div class="stat-item">
+            <span class="stat-value">3+</span>
+            <span class="stat-label" data-i18n="about.stat1">Years academic experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">6</span>
+            <span class="stat-label" data-i18n="about.stat2">Computational projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">2</span>
+            <span class="stat-label" data-i18n="about.stat3">Research internships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="skills.label">Expertise</span>
+        <h2 data-i18n="skills.title">Skills</h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming -->
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> <span data-i18n="skills.prog">Programming</span></h3>
+          <ul>
+            <li class="skill-item">
+              <i class="fab fa-python skill-icon"></i>
+              <span>Python</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:85%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fab fa-r-project skill-icon"></i>
+              <span>R / RStudio</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:80%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-wave-square skill-icon"></i>
+              <span>Matlab / App Designer</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:70%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-brain skill-icon"></i>
+              <span>Signal processing (EEG, ECG)</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:75%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-database skill-icon"></i>
+              <span>Access / SQL</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:65%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Biology & Health -->
+        <div class="skill-category">
+          <h3><i class="fas fa-flask"></i> <span data-i18n="skills.bio">Biology &amp; Health</span></h3>
+          <ul>
+            <li class="skill-item">
+              <i class="fas fa-lungs skill-icon"></i>
+              <span>Experimental physiology</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:88%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-virus skill-icon"></i>
+              <span>Microbiology / Toxicology</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:78%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-pills skill-icon"></i>
+              <span>Pharmacology</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:82%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-shield-virus skill-icon"></i>
+              <span>Immunology</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:75%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-heartbeat skill-icon"></i>
+              <span>Medical devices</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:80%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Data Science -->
+        <div class="skill-category">
+          <h3><i class="fas fa-chart-bar"></i> <span data-i18n="skills.data">Data Science</span></h3>
+          <ul>
+            <li class="skill-item">
+              <i class="fas fa-microscope skill-icon"></i>
+              <span>QSAR / PLS-DA</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:78%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-dna skill-icon"></i>
+              <span>OMICS (LC/MS)</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:72%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-calculator skill-icon"></i>
+              <span>Biostatistics / Epidemiology</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:83%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-project-diagram skill-icon"></i>
+              <span>Toxicokinetic modelling</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:70%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fab fa-github skill-icon"></i>
+              <span>GitHub / Version control</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:68%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Soft skills -->
+        <div class="skill-category">
+          <h3><i class="fas fa-people-group"></i> <span data-i18n="skills.soft">Soft Skills</span></h3>
+          <ul>
+            <li class="skill-item">
+              <i class="fas fa-tasks skill-icon"></i>
+              <span>Project management</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:82%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-comments skill-icon"></i>
+              <span>Oral communication</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:85%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-book skill-icon"></i>
+              <span>Scientific writing / Zotero</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:80%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-lightbulb skill-icon"></i>
+              <span>Critical thinking</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:90%"></span></span>
+            </li>
+            <li class="skill-item">
+              <i class="fas fa-user-clock skill-icon"></i>
+              <span>Autonomy / Rigour</span>
+              <span class="skill-bar"><span class="skill-fill" style="--w:88%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /skills-grid -->
+
+      <!-- tools cloud -->
+      <div class="tools-cloud">
+        <span><i class="fas fa-file-word"></i> Word</span>
+        <span><i class="fas fa-file-excel"></i> Excel</span>
+        <span><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+        <span><i class="fas fa-sticky-note"></i> Notion</span>
+        <span><i class="fas fa-palette"></i> Canva</span>
+        <span><i class="fab fa-r-project"></i> RStudio</span>
+        <span><i class="fas fa-wave-square"></i> Matlab</span>
+        <span><i class="fas fa-database"></i> Access</span>
+        <span><i class="fab fa-github"></i> GitHub</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="exp.label">Career</span>
+        <h2 data-i18n="exp.title">Professional Experience</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="exp-cards">
+
+        <div class="exp-card">
+          <div class="exp-icon-col"><i class="fas fa-dna"></i></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <span class="exp-role" data-i18n="exp.bio.role">Bioinformatics Intern</span>
+              <span class="exp-date">Apr 2026 – May 2026</span>
+            </div>
+            <div class="exp-org"><i class="fas fa-building"></i> BIOECOARGO · Lille</div>
+            <ul>
+              <li data-i18n="exp.bio.desc1">OMICS data analysis (LC/MS), bioactivity prediction using AI (QSAR, PLS-DA)</li>
+              <li data-i18n="exp.bio.desc2">Lab database management, enzymatic hydrolysis simulation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon-col"><i class="fas fa-chart-scatter-3d"></i></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <span class="exp-role" data-i18n="exp.peritox.role">Data Analyst Intern</span>
+              <span class="exp-date">Nov 2025 - Mar 2026</span>
+            </div>
+            <div class="exp-org"><i class="fas fa-building"></i> PERITOX · Amiens</div>
+            <ul>
+              <li data-i18n="exp.peritox.desc1">Meteorological / neonatal mortality data analysis, statistical modelling with R</li>
+              <li data-i18n="exp.peritox.desc2">Database cleaning, correlation analysis, diagnostic tool development</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon-col"><i class="fas fa-phone-volume"></i></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <span class="exp-role" data-i18n="exp.media.role">Telephone Interviewer</span>
+              <span class="exp-date">Oct 2024 - Jan 2026</span>
+            </div>
+            <div class="exp-org"><i class="fas fa-building"></i> MÉDIAMÉTRIE</div>
+            <ul>
+              <li data-i18n="exp.media.desc1">Survey data collection via telephone, proficiency with IT tools</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon-col"><i class="fas fa-child"></i></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <span class="exp-role" data-i18n="exp.vol.role">Childcare Monitor (Volunteer)</span>
+              <span class="exp-date">Feb 2024 - Present</span>
+            </div>
+            <div class="exp-org"><i class="fas fa-building"></i> CRPT Amiens · Volunteer</div>
+            <ul>
+              <li data-i18n="exp.vol.desc1">Children supervision, recreational activity coordination</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="proj.label">Work</span>
+        <h2 data-i18n="projects.title">Projects &amp; Work</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-brain"></i></div>
+          <h3 data-i18n="proj1.title">EEG / MEG Processing</h3>
+          <p data-i18n="proj1.desc">Biomedical signal analysis with Matlab — imaging, filtering, interpretation.</p>
+          <div class="project-tags"><span>Matlab</span><span>Signal</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-heart"></i></div>
+          <h3 data-i18n="proj2.title">Medical Device Lifecycle</h3>
+          <p data-i18n="proj2.desc">Full cycle: classification, reimbursement, market withdrawal (team project).</p>
+          <div class="project-tags"><span>Regulation</span><span>Team</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-dna"></i></div>
+          <h3 data-i18n="proj3.title">Toxicokinetic Modelling</h3>
+          <p data-i18n="proj3.desc">Computer simulation and documentation of biological models.</p>
+          <div class="project-tags"><span>Python</span><span>Modelling</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-database"></i></div>
+          <h3 data-i18n="proj4.title">Health Database</h3>
+          <p data-i18n="proj4.desc">Access DB construction, queries, patient data filtering.</p>
+          <div class="project-tags"><span>Access</span><span>SQL</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-robot"></i></div>
+          <h3 data-i18n="proj5.title">Baxter Robot Programming</h3>
+          <p data-i18n="proj5.desc">Python control algorithms (duo project).</p>
+          <div class="project-tags"><span>Python</span><span>Robotics</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+          <h3 data-i18n="proj6.title">Reports &amp; Posters</h3>
+          <p data-i18n="proj6.desc">Auditory system, PET, corpus callosum, pesticides &amp; ALL.</p>
+          <div class="project-tags"><span>Research</span><span>Writing</span></div>
+        </div>
+      </div>
+      <div class="github-link">
+        <a href="https://github.com/IsaacMukendiNZ" target="_blank" class="github-btn">
+          <i class="fab fa-github"></i> View on GitHub · IsaacMukendiNZ
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="contact.label">Get in touch</span>
+        <h2 data-i18n="contact.title">Contact</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:isaacmukendi01@gmail.com" class="contact-link">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-val">isaacmukendi01@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:0744818877" class="contact-link">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-val">07 44 81 88 77</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/isaac-mukendi" target="_blank" class="contact-link">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-val">isaac-mukendi</span>
+            </div>
+          </a>
+          <a href="https://github.com/IsaacMukendiNZ" target="_blank" class="contact-link">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-val">IsaacMukendiNZ</span>
+            </div>
+          </a>
+          <a href="#" class="contact-link">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">80000 Amiens, France</span>
+            </div>
+          </a>
+        </div>
+        <div class="contact-availability">
+          <div class="avail-badge"><span class="avail-dot"></span> <span data-i18n="contact.status">Available</span></div>
+          <p data-i18n="contact.available">Open to opportunities in health data analysis and biomedical R&amp;D.</p>
+          <a href="french.pdf" download class="btn btn-primary"><i class="fas fa-file-pdf"></i> <span data-i18n="contact.downloadCV">Download CV</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 Isaac Mukendi</span>
+      <span class="footer-sep">·</span>
+      <span>Built with purpose</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
